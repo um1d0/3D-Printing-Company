@@ -1,0 +1,833 @@
+/* #region MAIN */
+:root {
+  --mainColor: #b2b3b8;
+  --defaultSize: 1rem;
+}
+/* #region HERO */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 160vh;
+  background-image: url(/media/home/HBGs/herobg2.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  flex: 0 0 auto;
+}
+.heroText {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5.3%;
+  color: white;
+  gap: 24px;
+}
+@keyframes animation1 {
+  0% {
+    transform: translateX(-8%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.heroText h1 {
+  font-size: 5rem;
+  line-height: 1em;
+  animation: animation1 2.3s 0.7s;
+}
+
+.heroText h2 {
+  font-size: 1.5rem;
+  animation: animation1 2.3s 1s;
+}
+.heroButtons {
+  display: flex;
+  gap: 20px;
+  animation: animation1 2.3s 1.3s;
+}
+
+.heroData {
+  width: 100%;
+  display: flex;
+  align-content: flex-end;
+  justify-content: center;
+}
+.hdatabox {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  padding-bottom: 20px;
+  width: 100%;
+  max-width: 22.6%;
+  height: 100vh;
+  max-height: 126px;
+  background-color: #242834;
+}
+.hdatabox p {
+  font-size: 1.125rem;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: unset;
+  font-style: normal;
+  color: white;
+  padding-left: 15px;
+  animation: animation2 2.3s 0.7s;
+}
+.databoxLine {
+  width: 8px;
+  height: 100vh;
+  max-height: 80px;
+  border-radius: 100px;
+  background-color: #3a6afd;
+  animation: animation3 2.5s ease-out 0.7s;
+}
+@keyframes animation2 {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes animation3 {
+  0% {
+    transform: scaleY(0%);
+    transform-origin: top;
+  }
+  100% {
+    transform: scaleY(100%);
+  }
+}
+
+/* #endregion */
+/* #region WHAT WE OFFER */
+
+.Whiteheader {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  left: 4.5%;
+  width: 100%;
+  max-width: 340px;
+  height: 54px;
+  background: white;
+  border-radius: 0px 0px 10px 10px;
+  transition-duration: 1s;
+  transition-delay: 0.1s;
+}
+.Whiteheader h2 {
+  font-size: 1.125rem;
+  color: #00060f;
+  font-weight: 700;
+  padding-left: 10px;
+}
+.whatWeOffer video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.2;
+  overflow: hidden;
+}
+.whatWeOffer {
+  height: 100vh;
+  position: relative;
+  display: flex;
+}
+.whatWeOffer .overlay {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  background-color: #242834;
+}
+.WWOtext {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  color: white;
+  left: 5.2%;
+  font-size: 2.5rem;
+  top: 30%;
+}
+
+/* #endregion */
+
+/* #region WHY CHOOSE PRINTA */
+.WhyChoosePrinta {
+  padding-bottom: 3rem;
+  width: 100%;
+  background-image: url(/media/home/HBGs/WCPbg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+}
+.ReasonTab {
+  width: 100%;
+  display: flex;
+  padding-top: 16vh;
+}
+.WCPreasons {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5.2%;
+
+  gap: 85px;
+}
+.WCPreason {
+  display: flex;
+  flex-direction: column;
+
+  gap: 35px;
+}
+.WCPreason span {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.WCPreason svg {
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 55px;
+  height: 55px;
+  padding: 10px;
+}
+.WCPreasons h3 {
+  line-height: 30px;
+  font-size: 1.625rem;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: unset;
+  font-style: normal;
+}
+.WCPreasons p {
+  line-height: 30px;
+  font-size: 1.125rem;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: unset;
+  font-style: normal;
+}
+/* #endregion */
+/* #region WE KEEP TOP NOTCH MATERIALS */
+.WeKeepTopNotchMaterials {
+  height: 55vh;
+  width: 100%;
+  background-color: black;
+  display: flex;
+}
+.WeKeepTopNotchMaterials .materials {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  justify-content: center;
+  gap: 1.7%;
+}
+.WeKeepTopNotchMaterials .materials div {
+  width: 556px;
+  height: 378px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px 10px 0 0;
+}
+.mat1 {
+  background-image: url(/media/home/materials/ChairMaterial.jpg);
+  transition: background-image 0.5s ease;
+}
+.mat2 {
+  background-image: url(/media/home/materials/MaterialLamp.jpg);
+  transition: background-image 0.5s ease;
+}
+.mat3 {
+  background-image: url(/media/home/materials/MaterialVase.jpg);
+  transition: background-image 0.5s ease;
+}
+.mat1:hover {
+  background-image: linear-gradient(
+      to top,
+      rgba(11, 52, 237, 0.5) 0%,
+      rgba(125, 87, 214, 0.3) 30%,
+      rgba(11, 120, 236, 0) 100%
+    ),
+    url("/media/home/materials/ChairMaterial.jpg");
+}
+.mat2:hover {
+  background-image: linear-gradient(
+      to top,
+      rgba(11, 52, 237, 0.5) 0%,
+      rgba(125, 87, 214, 0.3) 30%,
+      rgba(11, 120, 236, 0) 100%
+    ),
+    url("/media/home/materials/MaterialLamp.jpg");
+}
+.mat3:hover {
+  background-image: linear-gradient(
+      to top,
+      rgba(11, 52, 237, 0.5) 0%,
+      rgba(125, 87, 214, 0.3) 30%,
+      rgba(11, 120, 236, 0) 100%
+    ),
+    url("/media/home/materials/MaterialVase.jpg");
+}
+
+.catalog {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 5%;
+  justify-content: center;
+}
+/* .materials .overlay {
+    width: 564px;
+    height: 350px;
+    opacity: 0.1;
+    background-image: url(/media/Screenshot\ 2025-09-02\ 175439.png);
+    background-size: 564px 200px;
+    transition: opacity 0.2s ease;
+    position: absolute;
+}
+.materials .overlay:hover {
+  opacity: 0.5;
+} */
+
+/* #endregion */
+/* #region TESTIMONIALS */
+
+.Testimonialsbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+  padding: 7vh 3%;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 350px;
+  gap: 40px;
+}
+
+.Testimonials {
+  height: 55vh;
+  padding-bottom: 50px;
+  background-color: #242834;
+  display: flex;
+  flex-direction: column;
+}
+
+.TestimQandTestims {
+  width: 100%;
+  align-items: center;
+  margin-top: 8.4vh;
+}
+
+.testimquote {
+  display: flex;
+  gap: 17px;
+  padding-left: 2%;
+}
+
+.testimquote p {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: unset;
+  font-style: normal;
+  font-size: var(--defaultSize);
+  line-height: 25px;
+  padding-top: 10px;
+}
+
+.testimquote .databoxLine {
+  max-height: 150px;
+}
+
+.testim {
+  width: 100%;
+  max-width: 310px;
+  display: flex;
+  gap: 25px;
+}
+
+.testim img {
+  border-radius: 10px;
+}
+
+.testimNames {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+}
+
+.testimNames h3 {
+  font-size: 0.875rem;
+  color: white;
+}
+
+.testimNames p {
+  font-size: var(--defaultSize);
+  color: var(--mainColor);
+}
+
+/* #endregion */
+/* #region POSSIBILITIES*/
+.Possibilities {
+  height: 90vh;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  padding: 0 3.4%;
+}
+.Possibilities > h2 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 400;
+}
+.Possibility {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+}
+
+.Possibility div {
+  width: 100%;
+  max-width: 400px;
+  height: 270px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.pos1 {
+  background-image: url(/media/home/Possibilities/POSimg1.jpg);
+  transition: background-image 0.5s ease;
+}
+.pos2 {
+  background-image: url(/media/home/Possibilities/POSimg2.jpg);
+  transition: background-image 0.5s ease;
+}
+.pos3 {
+  background-image: url(/media/home/Possibilities/POSimg3.jpg);
+  transition: background-image 0.5s ease;
+}
+.pos4 {
+  background-image: url(/media/home/Possibilities/POSimg4.jpg);
+  transition: background-image 0.5s ease;
+}
+.Possibility p {
+  font-size: 0.9rem;
+  color: var(--mainColor);
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.Posses {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  gap: 2rem;
+}
+.Posses > div {
+  flex: 1;
+}
+
+.pos1:hover {
+  background-image: linear-gradient(
+      to top,
+      rgba(11, 52, 237, 0.5) 0%,
+      rgba(125, 87, 214, 0.3) 30%,
+      rgba(11, 120, 236, 0) 100%
+    ),
+    url("/media/home/Possibilities/POSimg1.jpg");
+}
+.pos2:hover {
+  background-image: linear-gradient(
+      to top,
+      rgba(11, 52, 237, 0.5) 0%,
+      rgba(125, 87, 214, 0.3) 30%,
+      rgba(11, 120, 236, 0) 100%
+    ),
+    url("/media/home/Possibilities/POSimg2.jpg");
+}
+.pos3:hover {
+  background-image: linear-gradient(
+      to top,
+      rgba(11, 52, 237, 0.5) 0%,
+      rgba(125, 87, 214, 0.3) 30%,
+      rgba(11, 120, 236, 0) 100%
+    ),
+    url("/media/home/Possibilities/POSimg3.jpg");
+}
+.pos4:hover {
+  background-image: linear-gradient(
+      to top,
+      rgba(11, 52, 237, 0.5) 0%,
+      rgba(125, 87, 214, 0.3) 30%,
+      rgba(11, 120, 236, 0) 100%
+    ),
+    url("/media/home/Possibilities/POSimg4.jpg");
+}
+
+/* #endregion */
+/* #region CLIENTS */
+.Clients {
+  height: 30vh;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+}
+.ClientList {
+  display: flex;
+  justify-content: center;
+}
+.client {
+  width: 100%;
+  max-width: 18.2%;
+  height: 100vh;
+  height: 108px;
+  border: 1px solid #33383f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Clients .Whiteheader {
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+  border-radius: 10px 10px 0 0;
+}
+/* #endregion */
+/* #region FAQ */
+.FAQ {
+  width: 100%;
+  height: 80vh;
+  background-image: url(/media/home/HBGs/FAQbg.jpg);
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.FAQ > h2 {
+  padding-left: 6.4%;
+  font-size: 2.5rem;
+  font-weight: 400;
+  padding-top: 13.9vh;
+}
+.FAQbar {
+  display: flex;
+  width: 100%;
+  max-width: 807px;
+  padding-left: 5.6%;
+  flex-direction: column;
+  gap: 30px;
+}
+.FAQsearchbar {
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  justify-content: space-between;
+}
+.FAQsearchbar h3 {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+#FAQsearch {
+  width: 100%;
+  max-width: 256px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: var(--defaultSize);
+}
+.FAQsearchbar .search {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 280px;
+  height: 100vh;
+  max-height: 41px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #999b9f;
+}
+.FAQsearchbar svg {
+  width: 24px;
+  height: 24px;
+}
+#searchicon {
+  background: #999b9f;
+  width: 0%;
+  height: 0vh;
+}
+.searchsubmit {
+  display: flex;
+}
+.FAQselect {
+  display: flex;
+}
+.Gquestions {
+  width: 100%;
+  height: 100vh;
+  max-width: 104px;
+  max-height: 52px;
+}
+.otherquestions {
+  width: 100%;
+  height: 100vh;
+  max-width: 163px;
+  max-height: 52px;
+}
+.FAQselect a {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+.FAQselect a:hover {
+  color: #3a6afd;
+  border-bottom: 3px solid #3a6afd;
+}
+.Qbutton {
+  width: 100%;
+  height: 100vh;
+  max-width: 804px;
+  max-height: 71px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #33383f;
+  padding: 0 3%;
+  cursor: pointer;
+  transition: all 1s ease 0.2;
+}
+details[open] {
+  max-height: 190px;
+}
+details p {
+  font-size: var(--defaultSize);
+}
+.FAQlinks {
+  width: 100%;
+  max-width: 144px;
+  display: flex;
+  justify-content: space-around;
+  padding: 2vh 0;
+}
+.instagramIcon,
+.instagramIcon path {
+  fill: #ffffff;
+}
+summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 71px;
+  max-width: 804px;
+}
+.Qbutton svg {
+  width: 21px;
+  height: 21px;
+}
+.Qbutton h3 {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.Qbuttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 804px;
+  width: 100%;
+}
+/* #endregion */
+.blackbg {
+  width: 100%;
+  height: 7vh;
+  background-color: #000;
+}
+/* #endregion */
+/* #region RESPONSIVE*/
+@media screen and (max-width: 800px) {
+  * {
+    background-attachment: scroll;
+  }
+  
+  .heroButtons {
+    flex-direction: column;
+  }
+  .heroText h1 {
+    font-size: 2.5rem;
+  }
+  .heroText h2 {
+    font-size: 1.5rem;
+  }
+  .heroData {
+    flex-direction: column;
+    width: 100%;
+    background-color: #000;
+    gap: 2px;
+  }
+  .hdatabox {
+    max-width: unset;
+    font-size: var(--defaultSize);
+    max-height: 100px;
+    height: 100vh;
+  }
+  .hero .databoxLine {
+    height: 50px;
+  }
+  .whatWeOffer h3 {
+    font-size: 0.8em;
+  }
+  .WhyChoosePrinta {
+    flex-direction: column;
+    padding-bottom: 3rem;
+  }
+  .Whiteheader {
+    max-width: 250px;
+    font-size: 0.9rem;
+    max-height: 39px;
+    padding: 10px 10px;
+  }
+  .WCPreasons,
+  .WCPreason,
+  .WCPreason span {
+    gap: 15px;
+    padding-top: 0vh;
+  }
+  .WCPreason span {
+    flex-direction: row;
+  }
+  .ReasonTab {
+    height: 120vh;
+    flex-direction: column;
+    padding-top: 13vh;
+    justify-content: space-around;
+  }
+
+  .WeKeepTopNotchMaterials {
+    height: 160vh;
+  }
+  .WeKeepTopNotchMaterials .Whiteheader {
+    max-width: 320px;
+  }
+  .WeKeepTopNotchMaterials .materials {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+  }
+  .WeKeepTopNotchMaterials .materials div {
+    width: 280px;
+    height: 210px;
+    border-radius: 10px;
+  }
+  .mat2 {
+    order: 1;
+  }
+  .catalog {
+    padding-bottom: 0;
+    margin-top: 25%;
+  }
+  .Testimonials {
+    height: 145vh;
+  }
+  .Testimonialsbar {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 140vh;
+  }
+
+  .Possibilities {
+    height: 185vh;
+    justify-content: space-evenly;
+  }
+  .Posses {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .pos1,
+  .pos2,
+  .pos3,
+  .pos4 {
+    max-width: 300px;
+    max-height: 220px;
+  }
+  .Clients {
+    height: 90vh;
+  }
+  .Clients .Whiteheader {
+    max-width: 200px;
+    align-self: center;
+    left: 0;
+  }
+  .ClientList {
+    height: 70vh;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0;
+  }
+  .client {
+    width: 100%;
+    max-width: unset;
+  }
+  .FAQ {
+    height: 90vh;
+  }
+  .FAQbar {
+    height: 80vh;
+    justify-content: space-around;
+    padding-left: 5%;
+  }
+  .FAQsearchbar {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .Qbutton {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 801px) and (max-width: 1100px) {
+  .testimquote p {
+    font-size: 0.7rem;
+  }
+  
+}
+/* #endregion */
