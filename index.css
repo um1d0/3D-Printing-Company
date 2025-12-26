@@ -10,7 +10,7 @@
   justify-content: space-around;
   width: 100%;
   height: 160vh;
-  background-image: url(/media/home/HBGs/herobg2.jpg);
+  background-image: url("media/home/HBGs/herobg2.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -164,7 +164,7 @@
 .WhyChoosePrinta {
   padding-bottom: 3rem;
   width: 100%;
-  background-image: url(/media/home/HBGs/WCPbg.jpg);
+  background-image: url("media/home/HBGs/WCPbg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -242,15 +242,15 @@
   border-radius: 10px 10px 0 0;
 }
 .mat1 {
-  background-image: url(/media/home/materials/ChairMaterial.jpg);
+  background-image: url("media/home/materials/ChairMaterial.jpg");
   transition: background-image 0.5s ease;
 }
 .mat2 {
-  background-image: url(/media/home/materials/MaterialLamp.jpg);
+  background-image: url("media/home/materials/MaterialLamp.jpg");
   transition: background-image 0.5s ease;
 }
 .mat3 {
-  background-image: url(/media/home/materials/MaterialVase.jpg);
+  background-image: url("media/home/materials/MaterialVase.jpg");
   transition: background-image 0.5s ease;
 }
 .mat1:hover {
@@ -260,7 +260,7 @@
       rgba(125, 87, 214, 0.3) 30%,
       rgba(11, 120, 236, 0) 100%
     ),
-    url("/media/home/materials/ChairMaterial.jpg");
+    url("media/home/materials/ChairMaterial.jpg");
 }
 .mat2:hover {
   background-image: linear-gradient(
@@ -269,7 +269,7 @@
       rgba(125, 87, 214, 0.3) 30%,
       rgba(11, 120, 236, 0) 100%
     ),
-    url("/media/home/materials/MaterialLamp.jpg");
+    url("media/home/materials/MaterialLamp.jpg");
 }
 .mat3:hover {
   background-image: linear-gradient(
@@ -278,7 +278,7 @@
       rgba(125, 87, 214, 0.3) 30%,
       rgba(11, 120, 236, 0) 100%
     ),
-    url("/media/home/materials/MaterialVase.jpg");
+    url("media/home/materials/MaterialVase.jpg");
 }
 
 .catalog {
@@ -292,7 +292,7 @@
     width: 564px;
     height: 350px;
     opacity: 0.1;
-    background-image: url(/media/Screenshot\ 2025-09-02\ 175439.png);
+    background-image: url("media/Screenshot 2025-09-02 175439.png");
     background-size: 564px 200px;
     transition: opacity 0.2s ease;
     position: absolute;
@@ -424,19 +424,19 @@
   background-position: center;
 }
 .pos1 {
-  background-image: url(/media/home/Possibilities/POSimg1.jpg);
+  background-image: url("media/home/Possibilities/POSimg1.jpg");
   transition: background-image 0.5s ease;
 }
 .pos2 {
-  background-image: url(/media/home/Possibilities/POSimg2.jpg);
+  background-image: url("media/home/Possibilities/POSimg2.jpg");
   transition: background-image 0.5s ease;
 }
 .pos3 {
-  background-image: url(/media/home/Possibilities/POSimg3.jpg);
+  background-image: url("media/home/Possibilities/POSimg3.jpg");
   transition: background-image 0.5s ease;
 }
 .pos4 {
-  background-image: url(/media/home/Possibilities/POSimg4.jpg);
+  background-image: url("media/home/Possibilities/POSimg4.jpg");
   transition: background-image 0.5s ease;
 }
 .Possibility p {
@@ -464,7 +464,7 @@
       rgba(125, 87, 214, 0.3) 30%,
       rgba(11, 120, 236, 0) 100%
     ),
-    url("/media/home/Possibilities/POSimg1.jpg");
+    url("media/home/Possibilities/POSimg1.jpg");
 }
 .pos2:hover {
   background-image: linear-gradient(
@@ -473,7 +473,7 @@
       rgba(125, 87, 214, 0.3) 30%,
       rgba(11, 120, 236, 0) 100%
     ),
-    url("/media/home/Possibilities/POSimg2.jpg");
+    url("media/home/Possibilities/POSimg2.jpg");
 }
 .pos3:hover {
   background-image: linear-gradient(
@@ -482,7 +482,7 @@
       rgba(125, 87, 214, 0.3) 30%,
       rgba(11, 120, 236, 0) 100%
     ),
-    url("/media/home/Possibilities/POSimg3.jpg");
+    url("media/home/Possibilities/POSimg3.jpg");
 }
 .pos4:hover {
   background-image: linear-gradient(
@@ -491,7 +491,7 @@
       rgba(125, 87, 214, 0.3) 30%,
       rgba(11, 120, 236, 0) 100%
     ),
-    url("/media/home/Possibilities/POSimg4.jpg");
+    url("media/home/Possibilities/POSimg4.jpg");
 }
 
 /* #endregion */
@@ -528,7 +528,7 @@
 .FAQ {
   width: 100%;
   height: 80vh;
-  background-image: url(/media/home/HBGs/FAQbg.jpg);
+  background-image: url("media/home/HBGs/FAQbg.jpg");
   background-color: #000;
   background-repeat: no-repeat;
   background-size: cover;
@@ -686,7 +686,7 @@ summary {
   * {
     background-attachment: scroll;
   }
-  
+
   .heroButtons {
     flex-direction: column;
   }
@@ -828,6 +828,5 @@ summary {
   .testimquote p {
     font-size: 0.7rem;
   }
-  
 }
 /* #endregion */

@@ -8,7 +8,7 @@
 main {
   height: 90vh;
   width: 100%;
-  background-image: url(/media/contacts/Contactbg.png);
+  background-image: url("../../media/contacts/Contactbg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
