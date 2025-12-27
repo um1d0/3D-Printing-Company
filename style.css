@@ -78,7 +78,7 @@ header {
   height: 107px;
   position: fixed;
   justify-content: space-between;
-  z-index:100;
+  z-index: 100;
 }
 .logo {
   height: 45px;
@@ -177,7 +177,6 @@ header {
   cursor: pointer;
   border-radius: 2px;
   z-index: 1000;
-  
 }
 .BurgerIcon span {
   display: block;
@@ -217,7 +216,6 @@ header {
 
 footer {
   display: flex;
-  height: 60vh;
   background-color: #242834;
   justify-content: space-evenly;
   flex-direction: column;
@@ -345,25 +343,27 @@ footer a {
 
 @media screen and (max-width: 800px) {
   .PCnav {
-  display: none;
-}
-.MobileNav {
-  display: flex;
-}
-.BurgerIcon {
-  display: flex;
-}
-#MenuToggle:checked ~ .MobileNav {
-   opacity: 1;
+    display: none;
+  }
+  .MobileNav {
+    display: flex;
+  }
+  .BurgerIcon {
+    display: flex;
+  }
+  #MenuToggle:checked ~ .MobileNav {
+    opacity: 1;
     left: 0;
   }
   footer {
     flex-direction: column;
-    height: 170vh;
   }
   .footerMain {
     flex-direction: column;
   }
-
+  .license {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
 }
 /* #endregion */

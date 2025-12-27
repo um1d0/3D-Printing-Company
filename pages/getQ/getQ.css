@@ -2,11 +2,11 @@
 :root {
   --ContactMaincolor: rgb(0, 6, 15);
 }
-#bluenav {
+.PCnav ul li:nth-child(5) a{
   color: #3a6afd;
 }
+
 main {
-  height: 90vh;
   width: 100%;
   background-image: url("../../media/contacts/Contactbg.png");
   background-repeat: no-repeat;
@@ -17,6 +17,7 @@ main {
 }
 
 .Cform {
+  padding-top: 10rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -24,6 +25,16 @@ main {
   justify-content: space-between;
   padding-left: 5%;
 }
+.Cform form {
+  height: 50vh;
+  max-width: 780px;
+  background: #ffffff;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .Cheader {
   display: flex;
   flex-direction: column;
@@ -38,24 +49,18 @@ main {
   font-size: 1.125rem;
   font-weight: 400;
 }
-.Cform form {
-  height: 50vh;
-  max-width: 780px;
-  background: #ffffff;
-  border-radius: 10px 10px 0 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
+
 .divFpart {
   display: flex;
   justify-content: space-around;
   padding: 0 1rem;
 }
+
 .CminiForm {
   font-size: 1rem;
   color: var(--ContactMaincolor);
 }
+
 .CminiForm input {
   border: none;
   border-bottom: 1px solid var(--ContactMaincolor);
@@ -63,15 +68,18 @@ main {
   width: 240px;
   padding-left: 10px;
 }
+
 .LformAndSubmit .CminiForm input {
   height: 75px;
   width: 100%;
   max-width: 680px;
 }
+
 .LformAndSubmit .CminiForm {
   width: 100%;
   max-width: 680px;
 }
+
 .LformAndSubmit {
   width: 100%;
   display: flex;
@@ -80,23 +88,28 @@ main {
   justify-content: space-around;
   padding: 0 1rem;
 }
+
 .submit {
   width: 100%;
   display: flex;
 }
+
 .submit .empty {
   width: 100%;
   max-width: 169px;
 }
+
 .viewMaterials {
   color: white;
   max-width: 210px;
   height: 45px;
 }
+
 .viewMaterials:hover {
   background-color: #3a6afd;
   color: white;
 }
+
 /* #endregion */
 /* #region RESPONSIVE*/
 @media screen and (max-width: 800px) {
@@ -112,7 +125,6 @@ main {
   .Cheader {
     padding-left: 1rem;
   }
-
   .Cform form {
     height: 90vh;
     max-width: unset;

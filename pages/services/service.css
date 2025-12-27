@@ -1,0 +1,122 @@
+/* #region HERO*/
+.PCnav ul li:nth-child(1) a {
+  color: #3a6afd;
+}
+.Hero {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  color: white;
+  background: #00060f;
+  padding-bottom: 7rem;
+}
+.Hero h1 {
+  font-size: 2.5rem;
+  width: 90%;
+  padding-top: 12rem;
+  align-self: center;
+}
+.services {
+  width: 90%;
+  background: #242834;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-self: center;
+}
+.Service {
+  display: flex;
+  padding: 2rem 3rem;
+
+  border: 1px solid #33383f;
+}
+.ServiceText {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+}
+.BlueLine {
+  width: 8px;
+  height: 50px;
+  position: relative;
+  border-radius: 100px;
+  background-color: #3a6afd;
+  animation: animation1 1.2s ease-out 0.3s;
+}
+@keyframes animation1 {
+  0% {
+    transform: scaleY(0%);
+    transform-origin: top;
+  }
+  100% {
+    transform: scaleY(100%);
+  }
+}
+.ServiceText h3 {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+.ServiceText p {
+  font-size: 1.125rem;
+  line-height: 2rem;
+}
+
+/* #endregion */
+/* #region QUOTE*/
+.Quote {
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  background: url(../../media/services/Quote.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.Quote .overlay {
+  width: 100%;
+  object-fit: cover;
+  background-color: #101a24;
+  opacity: 0.7;
+}
+.QuoteText {
+  width: 100%;
+  color: white;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  align-self: center;
+}
+.QuoteText h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 3rem;
+}
+.QuoteText h3 {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.QuoteText .BlueButton {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+/* #endregion */
+/* #region RESPONSIVE*/
+@media screen and (max-width: 800px) {
+  .Hero {
+    padding: 0;
+  }
+  .services {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .QuoteText h2 {
+    font-size: 1.125rem;
+  }
+}
+/* #endregion */
