@@ -1,0 +1,187 @@
+.PCnav ul li:nth-child(2) a {
+  color: #3a6afd;
+}
+/* #region HERO*/
+
+.hero {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  padding-bottom: 7rem;
+  background: #00060f;
+  color: white;
+}
+.hero > h1 {
+  width: 90%;
+  padding-top: 10rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.HeroContainer {
+  width: 90%;
+  height: 70vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #242834;
+}
+.HeroContainer .texts {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.HeroContainer .texts p:nth-child(1) {
+  font-size: 1.625rem;
+  line-height: 1.4em;
+  font-weight: 400;
+}
+.HeroContainer .texts p:nth-child(2) {
+  font-size: 1.125rem;
+  line-height: 1.6em;
+  padding-bottom: 4rem;
+}
+/* #endregion */
+/* #region MISSION*/
+.mission {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+  background: url(../../media/about/mission.png) fixed center no-repeat;
+  background-size: cover;
+}
+.mission .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: #19232f;
+  opacity: 0.7;
+  z-index: 1;
+}
+.Whiteheader {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  left: 4.5%;
+  width: 100%;
+  max-width: 340px;
+  height: 54px;
+  background: white;
+  border-radius: 0px 0px 10px 10px;
+  transition-duration: 1s;
+  transition-delay: 0.1s;
+  z-index: 2;
+}
+.Whiteheader h2 {
+  font-size: 1.125rem;
+  color: #00060f;
+  font-weight: 700;
+  padding-left: 10px;
+}
+.mission .texts {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 17rem 0 0 4%;
+  gap: 3rem;
+  z-index: 2;
+}
+.mission .texts h2 {
+  font-size: 2.5rem;
+  line-height: 1.4em;
+}
+.mission .texts p {
+  font-size: 1.125rem;
+  line-height: 1.6em;
+}
+.CoreValues {
+  z-index: 2;
+}
+.CoreValues .Whiteheader {
+  border-radius: 10px 10px 0 0;
+}
+.Values {
+  width: 91%;
+  display: grid;
+  justify-self: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  padding-top: 3.4rem;
+  padding-bottom: 7rem;
+  color: white;
+}
+.value {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 263px;
+  background: #00060f;
+  border: 1px solid #242834;
+  padding: 2rem;
+}
+.BlueLine {
+  width: 8px;
+  height: 50px;
+  position: relative;
+  border-radius: 100px;
+  background-color: #3a6afd;
+}
+.ValueHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+.ValueHeader h3 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.value p {
+  font-size: 1rem;
+  padding-left: 1.5rem;
+}
+/* #endregion */
+/* #region */
+@media screen and (max-width: 950px) {
+  .hero {
+    padding: 0;
+  }
+  .HeroContainer {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
+  .HeroContainer img {
+    order: -1;
+    max-width: 320px;
+  }
+  .HeroContainer .texts {
+    gap: 3rem;
+  }
+  .HeroContainer .texts p:nth-child(1) {
+    font-size: 1.5rem;
+  }
+
+  .Values {
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    padding-bottom: 0;
+  }
+}
+@media screen and (min-width: 951px) and (max-width: 1100px) {
+  .HeroContainer .texts p:nth-child(2) {
+    font-size: 0.9rem;
+  }
+  .HeroContainer .texts p:nth-child(1) {
+    font-size: 1.3rem;
+  }
+  .HeroContainer img {
+    max-width: 400px;
+  }
+}

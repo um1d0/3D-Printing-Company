@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -15,9 +13,13 @@
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../../style.css" />
-    <link rel="stylesheet" href="service.css" />
-    <link rel="shortcut icon" href="../../media/favicon.png" type="image/x-icon" />
-    <title>Services</title>
+    <link rel="stylesheet" href="about.css" />
+    <link
+      rel="shortcut icon"
+      href="../../media/favicon.png"
+      type="image/x-icon"
+    />
+    <title>About</title>
   </head>
   <body>
     <header>
@@ -58,8 +60,8 @@
       </div>
       <nav class="PCnav">
         <ul>
-          <li><a href="#">Services</a></li>
-          <li><a href="../about/about.html">About</a></li>
+          <li><a href="../services/service.html">Services</a></li>
+          <li><a href="#">About</a></li>
           <li><a href="#">Materials</a></li>
           <li><a href="#">Resources</a></li>
           <li><a href="../getQ/getquote.html">Contact</a></li>
@@ -75,8 +77,8 @@
       </label>
       <nav class="MobileNav">
         <ul>
-          <li><a href="#">Services</a></li>
-          <li><a href="../about/about.html">About</a></li>
+          <li><a href="../services/service.html">Services</a></li>
+          <li><a href="#">About</a></li>
           <li><a href="">Material</a></li>
           <li><a href="">Resources</a></li>
           <li><a href="../getQ/getquote.html">Contact</a></li>
@@ -88,112 +90,169 @@
       </nav>
     </header>
     <main>
-      <section class="Hero">
-        <h1 class="montserrat">What We Can Do for You</h1>
-        <div class="services">
-          <span class="Service">
-            <div class="BlueLine"></div>
-            <div
-              class="ServiceText"
-              data-aos="fade-in"
-              data-aos-offset="300"
-              data-aos-duration="1700"
-            >
-              <h3 class="montserrat">Rapid Prototyping</h3>
-              <p>
-                I'm a paragraph. Click here to add your own <br />
-                text and edit me. It’s easy. Just click “Edit <br />
-                Text” or double click me to add your own <br />
-                content and make changes to the font. I’m a <br />
-                great place for you to tell a story and let your <br />
-                users know a little more about you.
-              </p>
-            </div>
-          </span>
-          <span class="Service">
-            <div class="BlueLine"></div>
-            <div
-              class="ServiceText"
-              data-aos="fade-in"
-              data-aos-offset="300"
-              data-aos-duration="1700"
-            >
-              <h3 class="montserrat">Online 3D Printing</h3>
-              <p>
-                I'm a paragraph. Click here to add your own <br />
-                text and edit me. It’s easy. Just click “Edit <br />
-                Text” or double click me to add your own <br />
-                content and make changes to the font.
-              </p>
-            </div>
-          </span>
-          <span class="Service">
-            <div class="BlueLine"></div>
-            <div
-              class="ServiceText"
-              data-aos="fade-in"
-              data-aos-offset="300"
-              data-aos-duration="1700"
-            >
-              <h3 class="montserrat">Design Services</h3>
-              <p>
-                I'm a paragraph. Click here to add your own <br />
-                text and edit me. It’s easy. Just click “Edit <br />
-                Text” or double click me to add your own <br />
-                content and make changes to the font.
-              </p>
-            </div>
-          </span>
-          <span class="Service">
-            <div class="BlueLine"></div>
-            <div
-              class="ServiceText"
-              data-aos="fade-in"
-              data-aos-offset="300"
-              data-aos-duration="1700"
-            >
-              <h3 class="montserrat">Post Processing</h3>
-              <p>
-                I'm a paragraph. Click here to add your own <br />
-                text and edit me. It’s easy. Just click “Edit <br />
-                Text” or double click me to add your own <br />
-                content and make changes to the font. I’m a <br />
-                great place for you to tell a story and let your <br />
-                users know a little more about you.
-              </p>
-            </div>
-          </span>
+      <section class="hero">
+        <h1
+          class="montserrat"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-duration="2000"
+        >
+          Who We Are
+        </h1>
+        <div class="HeroContainer">
+          <div
+            class="texts"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-duration="2000"
+          >
+            <p class="montserrat">
+              I'm a paragraph. Click here to <br />
+              add your own text and edit me. <br />
+              I’m a great place for you to tell <br />
+              a story and let your users know <br />
+              a little more about you.
+            </p>
+            <p class="montserrat">
+              I'm a paragraph. Click here to add your own <br />
+              text and edit me. It’s easy. Just click “Edit <br />
+              Text” or double click me to add your own <br />
+              content and make changes to the font. I’m a <br />
+              great place for you to tell a story and let <br />
+              your users know a little more about you.
+            </p>
+          </div>
+          <img
+            src="../../media/about/aboutHero.png"
+            alt="3D Printer Blueprint"
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-duration="2000"
+          />
         </div>
       </section>
-      <section class="Quote">
+      <section class="mission">
         <div class="overlay"></div>
-        <div class="QuoteText">
+        <div class="Whiteheader aos-init aos-animate" data-aos="fade-down">
+          <h2 class="montserrat">Our Mission</h2>
+        </div>
+        <div class="texts">
           <h2
             class="montserrat"
-            data-aos="fade-in"
+            data-aos="fade-right"
             data-aos-offset="300"
-            data-aos-duration="1700"
+            data-aos-duration="2000"
           >
-            "We all have our time machines, don't we. <br />
-            Those that take us back are memories... <br />
-            those that carry us forward are dreams."
+            I'm a paragraph. Click here to add <br />
+            your own text and edit me. It’s easy. <br />
+            Just click “Edit Text” or double click <br />
+            me to add your own content and <br />
+            make changes to the font.
           </h2>
-          <h3
-            class="montserrat"
-            data-aos="fade-in"
+          <p
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-duration="2000"
+          >
+            I'm a paragraph. Click here to add your own text and edit me. It’s
+            easy. Just click “Edit Text” or <br />
+            double click me to add your own content and make changes to the
+            font. I’m a great place for <br />
+            you to tell a story and let your users know a little more about you.
+          </p>
+        </div>
+        <div class="CoreValues">
+          <div
+            class="Whiteheader aos-init aos-animate"
+            data-aos="fade-up"
             data-aos-offset="300"
             data-aos-duration="1700"
           >
-            HG Wells
-          </h3>
-          <a
-            href="pages/getQ/getquote.html"
-            class="BlueButton"
-            data-aos="fade-in"
-            data-aos-offset="300"
-            data-aos-duration="1700"
-            >Get a Quote</a
-          >
+            <h2 class="montserrat">Core Values</h2>
+          </div>
+          <div class="Values">
+            <div class="value">
+              <div class="ValueHeader">
+                <div
+                  class="BlueLine"
+                  data-aos="slide-down"
+                  data-aos-offset="300"
+                  data-aos-duration="1300"
+                ></div>
+                <h3
+                  class="montserrat"
+                  data-aos="fade-in"
+                  data-aos-offset="300"
+                  data-aos-duration="2000"
+                >
+                  Innovation
+                </h3>
+              </div>
+              <p
+                data-aos="fade-in"
+                data-aos-offset="300"
+                data-aos-duration="2000"
+              >
+                I'm a paragraph. Click here to <br />
+                add your own text and edit me. <br />
+                Let your users get to know you.
+              </p>
+            </div>
+            <div class="value">
+              <div class="ValueHeader">
+                <div
+                  class="BlueLine"
+                  data-aos="slide-down"
+                  data-aos-offset="300"
+                  data-aos-duration="1300"
+                ></div>
+                <h3
+                  class="montserrat"
+                  data-aos="fade-in"
+                  data-aos-offset="300"
+                  data-aos-duration="2000"
+                >
+                  Transparency
+                </h3>
+              </div>
+              <p
+                data-aos="fade-in"
+                data-aos-offset="300"
+                data-aos-duration="2000"
+              >
+                I'm a paragraph. Click here to <br />
+                add your own text and edit me. <br />
+                Let your users get to know you.
+              </p>
+            </div>
+            <div class="value">
+              <div class="ValueHeader">
+                <div
+                  class="BlueLine"
+                  data-aos="slide-down"
+                  data-aos-offset="300"
+                  data-aos-duration="1300"
+                ></div>
+                <h3
+                  class="montserrat"
+                  data-aos="fade-in"
+                  data-aos-offset="300"
+                  data-aos-duration="2000"
+                >
+                  Accessibility
+                </h3>
+              </div>
+              <p
+                data-aos="fade-in"
+                data-aos-offset="300"
+                data-aos-duration="2000"
+              >
+                I'm a paragraph. Click here to <br />
+                add your own text and edit me. <br />
+                Let your users get to know you.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -259,7 +318,6 @@
         >
       </p>
     </footer>
-
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
