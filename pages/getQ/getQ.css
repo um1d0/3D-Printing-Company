@@ -2,7 +2,7 @@
 :root {
   --ContactMaincolor: rgb(0, 6, 15);
 }
-.PCnav ul li:nth-child(5) a{
+.PCnav ul li:nth-child(5) a {
   color: #3a6afd;
 }
 
@@ -125,7 +125,6 @@ main {
     padding-left: 1rem;
   }
   .Cform form {
-    height: 90vh;
     max-width: unset;
     width: 95%;
     align-self: center;

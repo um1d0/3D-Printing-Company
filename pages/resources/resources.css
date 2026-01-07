@@ -1,0 +1,165 @@
+.PCnav ul li:nth-child(4) a {
+  color: #3a6afd;
+}
+/* #region Main*/
+main > h1 {
+  width: 90%;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 7rem;
+  background: #00060f;
+  color: white;
+}
+.ResourceContainer {
+  width: 90%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 6rem;
+  background: #242834;
+}
+.resource {
+  display: flex;
+  flex-direction: column;
+  background: #00060f;
+}
+.MiniContainer {
+  padding: 3rem 2rem;
+}
+.DateandTime {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: 0.75rem;
+}
+
+.circle {
+  width: 3px;
+  height: 3px;
+  border-radius: 100%;
+  background: white;
+}
+.description h2 {
+  font-size: 1.3125rem;
+  font-weight: 600;
+  padding: 1rem 0;
+}
+.description p {
+  font-size: 1.125rem;
+  line-height: 1.7rem;
+  padding-bottom: 4rem;
+}
+.description:hover {
+  color: #3e6dfd;
+}
+.statistics {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #33383f;
+}
+.static {
+  width: 34px;
+  height: 19px;
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+.static svg,
+.static svg path {
+  fill: white;
+}
+.static:nth-child(2) path:hover {
+  fill: #3e6dfd;
+}
+.static p,
+.likes p {
+  height: 13px;
+  font-size: 0.75rem;
+}
+
+.likes label {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  cursor: pointer;
+}
+.statistics:last-child {
+  margin-left: auto;
+}
+.likes {
+  width: 100%;
+}
+.likes label {
+  justify-content: flex-end;
+}
+.likes input {
+  display: none;
+}
+.likes label p:nth-child(2) {
+  display: none;
+}
+.likes label path {
+  stroke: red;
+}
+.likes input:checked + label p:nth-child(1) {
+  display: none;
+}
+.likes input:checked + label p:nth-child(2) {
+  display: flex;
+}
+
+.likes input:checked + label path {
+  fill: red;
+}
+/* #endregion */
+/* #region RESPONSIVE*/
+@media screen and (max-width: 1000px) {
+  main {
+    padding-bottom: 0;
+  }
+  .ResourceContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #00060f;
+    padding: 0;
+    padding-bottom: 3rem;
+    gap: 0;
+  }
+  .MiniContainer {
+    padding: 0;
+    padding-bottom: 3rem;
+    box-sizing: border-box;
+  }
+}
+@media screen and (min-width: 951px) and (max-width: 1200px) {
+  .ResourceContainer {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    background: #00060f;
+    padding: 0;
+    padding-bottom: 3rem;
+  }
+  .MiniContainer {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1201px) and (max-width: 1440px) {
+  .ResourceContainer {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+  }
+}
+
+/* #endregion */

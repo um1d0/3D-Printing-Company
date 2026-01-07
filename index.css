@@ -9,7 +9,7 @@
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
-  height: 150vh;
+  padding-bottom: 7rem;
   background-image: url("media/home/HBGs/herobg2.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -20,6 +20,7 @@
 .heroText {
   display: flex;
   flex-direction: column;
+  padding-top: 15rem;
   margin-left: 5.3%;
   color: white;
   gap: 24px;
@@ -48,6 +49,7 @@
   display: flex;
   gap: 20px;
   animation: animation1 2.3s 1.3s;
+  padding-bottom: 20rem;
 }
 
 .heroData {
@@ -63,8 +65,7 @@
   padding-bottom: 20px;
   width: 100%;
   max-width: 22.6%;
-  height: 100vh;
-  max-height: 126px;
+  height: 126px;
   background-color: #242834;
 }
 .hdatabox p {
@@ -79,8 +80,7 @@
 }
 .databoxLine {
   width: 8px;
-  height: 100vh;
-  max-height: 80px;
+  height: 80px;
   border-radius: 100px;
   background-color: #3a6afd;
   animation: animation3 2.5s ease-out 0.7s;
@@ -137,9 +137,9 @@
   overflow: hidden;
 }
 .whatWeOffer {
-  height: 100vh;
   position: relative;
   display: flex;
+  height: 100vh;
 }
 .whatWeOffer .overlay {
   height: 100%;
@@ -221,21 +221,21 @@
 /* #endregion */
 /* #region WE KEEP TOP NOTCH MATERIALS */
 .WeKeepTopNotchMaterials {
-  height: 55vh;
   width: 100%;
   background-color: black;
   display: flex;
 }
 .WeKeepTopNotchMaterials .materials {
+  width: 100%;
   display: flex;
   align-items: flex-end;
-  width: 100%;
   justify-content: center;
+  padding-top: 10rem;
   gap: 1.3%;
 }
 .WeKeepTopNotchMaterials .materials div {
   width: 564px;
-   height: 350px;
+  height: 350px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -497,12 +497,10 @@
 /* #endregion */
 /* #region CLIENTS */
 .Clients {
-  height: 30vh;
   width: 100%;
   background-color: #000;
   display: flex;
   flex-direction: column;
-  
 }
 .ClientList {
   display: flex;
@@ -511,7 +509,6 @@
 .client {
   width: 100%;
   max-width: 18.2%;
-  height: 100vh;
   height: 108px;
   border: 1px solid #33383f;
   display: flex;
@@ -519,9 +516,8 @@
   align-items: center;
 }
 .Clients .Whiteheader {
-
   position: relative;
- 
+
   width: 100%;
   max-width: 280px;
   border-radius: 10px 10px 0 0;
@@ -579,8 +575,7 @@
   flex-direction: row;
   width: 100%;
   max-width: 280px;
-  height: 100vh;
-  max-height: 41px;
+  height: 41px;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #999b9f;
@@ -602,15 +597,13 @@
 }
 .Gquestions {
   width: 100%;
-  height: 100vh;
   max-width: 104px;
-  max-height: 52px;
+  height: 52px;
 }
 .otherquestions {
   width: 100%;
-  height: 100vh;
+  height: 52px;
   max-width: 163px;
-  max-height: 52px;
 }
 .FAQselect a {
   justify-content: center;
@@ -624,9 +617,9 @@
 }
 .Qbutton {
   width: 100%;
-  height: 100vh;
-  max-width: 804px;
   max-height: 71px;
+  height: 100%;
+  max-width: 804px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -707,8 +700,7 @@ summary {
   .hdatabox {
     max-width: unset;
     font-size: var(--defaultSize);
-    max-height: 100px;
-    height: 100vh;
+    height: 100px;
   }
   .hero .databoxLine {
     height: 50px;
@@ -734,7 +726,6 @@ summary {
   }
   .WCPreason span {
     flex-direction: row;
- 
   }
   .WCPreasons {
     gap: 3rem;
@@ -747,7 +738,7 @@ summary {
   }
 
   .WeKeepTopNotchMaterials {
-    height: auto;   
+    height: auto;
     padding-bottom: 7rem;
   }
   .WeKeepTopNotchMaterials .Whiteheader {
@@ -793,16 +784,12 @@ summary {
     max-width: 300px;
     max-height: 220px;
   }
-  .Clients {
-    height: 90vh;
-  }
   .Clients .Whiteheader {
     max-width: 200px;
     align-self: center;
     left: 0;
   }
   .ClientList {
-    height: 70vh;
     flex-direction: column;
     justify-content: space-around;
     margin: 0;
@@ -812,7 +799,6 @@ summary {
     max-width: unset;
   }
   .FAQbar {
-    height: 80vh;
     justify-content: space-around;
     padding-left: 5%;
   }
@@ -823,9 +809,8 @@ summary {
   .Qbutton {
     padding: 0;
     border: none;
-    border-bottom: 1px solid #33383f;;
+    border-bottom: 1px solid #33383f;
   }
-  
 }
 @media screen and (min-width: 801px) and (max-width: 1100px) {
   .testimquote p {
